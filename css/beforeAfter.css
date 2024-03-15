@@ -1,0 +1,56 @@
+.header-content nav ul li .link-item::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 97%;
+    height: 200%;
+    border-width: 0 2px;
+    border-style: solid;
+    border-color: #7b5244;
+    top: -10px;
+    left: 0;
+    transform: scale3d(1, 0, 1);
+    transition: transform 1s;
+    transform-origin: left;
+
+}
+
+.header-content nav ul>li>.link-item:hover:before {
+    transform: scale3d(1, 1, 1);
+}
+
+.header-content nav ul li .link-item::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 99%;
+    height: 182%;
+    top: -10px;
+    left: 2px;
+    border-width: 2px 0;
+    border-style: solid;
+    border-color: #7b5244;
+    transform: scale3d(1, 0, 1);
+    transition-delay: 2s;
+    transition: transform 0.2s;
+    transform-origin: right;
+}
+
+.header-content nav ul li .link-item:hover:after {
+    transform: scale3d(1, 1, 1);
+}
+.header-content .login ul i:last-child::after {
+    content: "0";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: rgb(123, 68, 10);
+    color: white;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 30%;
+    font-size: 15px;
+    position: absolute;
+    left: 12px;
+    top: 0px;
+}
